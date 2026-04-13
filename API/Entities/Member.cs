@@ -17,6 +17,7 @@ public class Member
     public required string Country { get; set; }
 
     // Navigation property
+    [JsonIgnore]
     public List<Photo> Photos { get; set; } = [];
 
     [JsonIgnore]
